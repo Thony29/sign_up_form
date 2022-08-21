@@ -20,19 +20,65 @@
         >
       </div>
       <div class="col">
-      <p>
-        This is not a real online service! Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Officiis alias aut veritatis animi. Enim
-        adipisci soluta ipsum optio omnis natus.
-        
-        <span>quos cum? You know you want
-        to!</span> 
-      </p>
-      <h2>Let's do this!!</h2>
-      <form action="">
-        
-      </form>
+        <p>
+          This is not a real online service! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Officiis alias aut veritatis animi. Enim
+          adipisci soluta ipsum optio omnis natus.
+
+          <span>quos cum? You know you want to!</span>
+        </p>
+        <div class="form">
+        <h2>Let's do this!!</h2>
+        <form action="" method="post">
+          <div class="first">
+          <div class="first_name">
+          <label for="first_name"> FIRST NAME </label>
+          <input type="text" id="first_name" name="first_name" placeholder="Thor" required/>
+        </div>
+         
+          <div class="email">
+         <label for="email">EMAIL</label>
+         <input
+           type="email"
+           id="email"
+           name="email"
+           placeholder="joe@example.com"
+         />
+          <div class="password" id="focus_div" tabindex="0" >
+            <label for="password"> PASSWORD </label>
+            <div > </div>
+            <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password" id="password" name="password"  />
+            <div class="requirements">
+              Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.
+            </div>
+          </div>
+        </div> </div>
+        <div class="second">
+          <div class="last_name">
+            <label for="last_name"> LAST NAME </label>
+            <input type="text" id="last_name" name="last_name" placeholder="Odinson" required/>
+          </div>
+          <div class="tel">
+          <label for="tel"> NUMBER </label>
+          <input type="tel" id="tel" name="tel" />
+        </div>
+          
+          <div class="confirm_password" id="focus_div" tabindex="0">
+          <label>CONFIRM PASSWORD </label>
+          <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password" id="confirm_password" name="confirm_password"  />
+          <div class="requirements">
+            Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.
+          </div>
+        </div>
+          </div>
+        </div>
+        <div class="footer">
+          <button type="submit">Create Account</button>
+          <h4>Already have an account? Log in</h4>
+        </div>
+        </form>
+       
+      </div>
     </div>
-  </div>
   </body>
 </html>

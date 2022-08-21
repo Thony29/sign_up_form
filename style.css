@@ -7,6 +7,7 @@
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 
 .odin {
@@ -40,10 +41,8 @@ a {
   color: #fff;
 }
 .main_container {
- 
   display: flex;
   border: 1px solid blue;
-   
 }
 
 span {
@@ -57,5 +56,80 @@ p {
   padding: 80px 20px 170px 20px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+   
 }
 
+.form {
+  
+  padding: 20px;
+  box-shadow: 5px 10px 18px #b2bdb3;
+
+  
+}
+
+form {
+  
+  padding: 3px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  font-size: 10px;
+  display: flex;
+  padding: 17px 5px 4px 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+input{
+  background-color: #ffff;
+  border: 2px solid #d6d9dc;
+  border-radius: 5px;
+  width: 235px;
+  padding: 3px;
+  font-size: 14px;
+  
+}
+
+.footer {
+ 
+ padding: 20px;
+}
+button{
+  margin: 10px 0;
+  font-size: 1em;
+  color: white;
+  background-color: rgb(3, 103, 34);
+  padding: 6px 15px;
+  border: 6px double rgb(246, 243, 243);
+  border-radius: 8px;
+}
+
+input:invalid {
+  border: 1px solid red;
+ }
+ input:required{
+  border: 1px solid rgb(22, 22, 22);
+ }
+ .requirements{
+  color: red;
+  /* opacity: 0; */
+  font-size: 0.8em;
+ }
+ #focus_div > .requirements{
+  display: none;
+}
+#focus_div:focus > .requirements{
+  display: block;
+}
+
+ 
+
+ 
+@media only screen and (max-width: 700px){input{
+ 
+  width: 100%;
+}
+
+}
