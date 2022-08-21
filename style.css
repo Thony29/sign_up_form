@@ -123,6 +123,9 @@ input:invalid {
 #focus_div:focus > .requirements{
   display: block;
 }
+input:focus{
+  box-shadow: 5px 10px 10px #b2bdb3;
+}
 
  
 
